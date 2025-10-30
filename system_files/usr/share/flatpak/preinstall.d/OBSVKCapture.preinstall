@@ -1,0 +1,3 @@
+[Flatpak Preinstall com.obsproject.Studio.Plugin.OBSVkCapture]
+Branch=stable
+IsRuntime=true

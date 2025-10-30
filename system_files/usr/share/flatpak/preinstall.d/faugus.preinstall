@@ -1,0 +1,3 @@
+[Flatpak Preinstall io.github.faugus.faugus-launcher]
+Branch=stable
+IsRuntime=false
