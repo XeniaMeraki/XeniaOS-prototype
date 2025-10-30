@@ -11,4 +11,4 @@ The project is in its infancy, I would not use this for any serious work/use for
 
 Developers can currently most easily be reached in the [Zirconium Discord](https://discord.gg/mmgNQpxwhW)
 
-Our project is unsupported and unaffiliated (currently) with: CachyOS, Bazzite, Bootcrew, Zirconium, Fedora.
+Our project is unsupported and unaffiliated (currently) with: CachyOS, Universal Blue, Bluefin, Bazzite, Bootcrew, Zirconium, Fedora.
