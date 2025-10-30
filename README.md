@@ -38,7 +38,7 @@ It can be used by first installing [Bluefin](https://projectbluefin.io/) (or any
 The project is in its infancy, I would not use this for any serious work/use for right now.
 
 
-##Contact and thx
+## Contact and thx
 
 
 Developers can currently most easily be reached in the [Zirconium Discord](https://discord.gg/mmgNQpxwhW)
