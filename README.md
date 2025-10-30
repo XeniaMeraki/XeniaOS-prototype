@@ -11,7 +11,7 @@ And of course, featuring [Xenia the fox](https://xenia.efi.pages.gay/) in themin
 It can be used by first installing [Bluefin](https://projectbluefin.io/) (or any related Bootc image) and rebasing with command:
 
 
-`sudo bootc switch ghcr.io/xeniameraki/XeniaOS`
+`sudo bootc switch ghcr.io/xeniameraki/xeniaos`
 
 
 ## Featuressss
