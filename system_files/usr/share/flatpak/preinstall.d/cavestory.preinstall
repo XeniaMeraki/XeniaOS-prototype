@@ -1,0 +1,3 @@
+[Flatpak Preinstall com.gitlab.coringao.cavestory-nx]
+Branch=stable
+IsRuntime=false

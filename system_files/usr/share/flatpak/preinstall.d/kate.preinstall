@@ -1,0 +1,3 @@
+[Flatpak Preinstall org.kde.kate]
+Branch=stable
+IsRuntime=false

@@ -1,0 +1,3 @@
+[Flatpak Preinstall net.stabyourself.nottetris2]
+Branch=stable
+IsRuntime=false

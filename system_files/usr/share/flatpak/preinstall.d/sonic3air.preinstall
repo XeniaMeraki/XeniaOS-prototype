@@ -1,0 +1,3 @@
+[Flatpak Preinstall org.sonic3air.Sonic3AIR]
+Branch=stable
+IsRuntime=false

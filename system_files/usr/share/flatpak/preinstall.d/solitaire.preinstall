@@ -1,0 +1,3 @@
+[Flatpak Preinstall org.gnome.Aisleriot]
+Branch=stable
+IsRuntime=false
