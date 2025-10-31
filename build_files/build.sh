@@ -18,6 +18,7 @@ dnf -y install steam
 dnf -y install dolphin
 dnf -y install ptyxis
 dnf -y install hyfetch
+dnf -y copr enable atim/starship
 dnf -y install starship
 
 # Nuke Nautilus from orbit and replace with KDE dialogs
