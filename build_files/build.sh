@@ -18,8 +18,23 @@ dnf -y install steam
 dnf -y install dolphin
 dnf -y install ptyxis
 dnf -y install hyfetch
-dnf -y install xdg-desktop-portal
-dnf -y install xdg-desktop-portal-kde
+
+# Nuke Nautilus from orbit and replace with KDE dialogs
+dnf install -y xdg-desktop-portal-kde
+tee /usr/share/xdg-desktop-portal/niri-portals.conf <<'EOF'
+[preferred]
+default=kde;gnome;
+org.freedesktop.impl.portal.ScreenCast=gnome;
+org.freedesktop.impl.portal.Access=kde;
+org.freedesktop.impl.portal.Notification=kde;
+org.freedesktop.impl.portal.Secret=gnome-keyring;
+dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"';
+EOF
+
+#Dolphin file associations
+dnf install -y dolphin kf5-kservice keditfiletype
+ln -s ./kf5-applications.menu /etc/xdg/menus/applications.menu
+kbuildsycoca6 --noincremental
 
 #Uses Noctalia by default
 systemctl mask --global dms.service
