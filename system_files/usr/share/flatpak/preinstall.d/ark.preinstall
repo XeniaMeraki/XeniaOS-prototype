@@ -1,0 +1,3 @@
+[Flatpak Preinstall org.kde.ark]
+Branch=stable
+IsRuntime=false
