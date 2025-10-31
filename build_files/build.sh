@@ -33,7 +33,7 @@ EOF
 
 #Dolphin file associations
 dnf install -y dolphin kf5-kservice keditfiletype
-ln -s ./kf5-applications.menu /etc/xdg/menus/applications.menu
+ln -sf ./kf5-applications.menu /etc/xdg/menus/applications.menu
 kbuildsycoca6 --noincremental
 
 #Uses Noctalia by default
