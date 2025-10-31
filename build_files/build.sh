@@ -18,6 +18,9 @@ dnf -y install steam
 dnf -y install dolphin
 dnf -y install ptyxis
 dnf -y install hyfetch
+dnf -y install xdg-desktop-portal
+dnf -y install xdg-desktop-portal-kde
+dnf -y install plasma-workspace
 
 #Uses Noctalia by default
 systemctl mask --global dms.service
