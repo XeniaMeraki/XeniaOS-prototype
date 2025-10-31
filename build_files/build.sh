@@ -28,7 +28,6 @@ org.freedesktop.impl.portal.ScreenCast=gnome;
 org.freedesktop.impl.portal.Access=kde;
 org.freedesktop.impl.portal.Notification=kde;
 org.freedesktop.impl.portal.Secret=gnome-keyring;
-dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"';
 EOF
 
 #Dolphin file associations
