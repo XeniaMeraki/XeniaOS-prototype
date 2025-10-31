@@ -20,7 +20,6 @@ dnf -y install ptyxis
 dnf -y install hyfetch
 dnf -y install xdg-desktop-portal
 dnf -y install xdg-desktop-portal-kde
-dnf -y install plasma-workspace
 
 #Uses Noctalia by default
 systemctl mask --global dms.service
@@ -46,8 +45,6 @@ KERNEL_VERSION="$(find "/usr/lib/modules" -maxdepth 1 -type d ! -path "/usr/lib/
 export DRACUT_NO_XATTR=1
 dracut --no-hostonly --kver "$KERNEL_VERSION" --reproducible --zstd -v --add ostree -f "/usr/lib/modules/$KERNEL_VERSION/initramfs.img"
 chmod 0600 "/usr/lib/modules/${KERNEL_VERSION}/initramfs.img"
-
-ls -lah /usr/lib/modules
 
 # Use a COPR Example:
 #
