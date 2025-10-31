@@ -19,7 +19,6 @@ It can be used by first installing [Bluefin](https://projectbluefin.io/) (or any
 
 -Linux/Atomic Fedora
 
-
 -Niri
 
 
@@ -37,6 +36,8 @@ It can be used by first installing [Bluefin](https://projectbluefin.io/) (or any
 
 The project is in its infancy, I would not use this for any serious work/use for right now.
 
+<p align="center">
+<img alt="Screenshot" src="system_files/usr/share/XeniaOS/ExampleScreenshot.png?sanitize=true"/>
 </p>
 
 
@@ -45,6 +46,7 @@ The project is in its infancy, I would not use this for any serious work/use for
 
 Developers can currently most easily be reached in the [Zirconium Discord](https://discord.gg/mmgNQpxwhW)
 
+XeniaOS headed by [Xenia Meraki](https://xeniameraki.com)
 
 Special thank yous to [Tulip](https://github.com/tulilirockz) for general help
 
@@ -53,3 +55,5 @@ Special thank yous to [Tulip](https://github.com/tulilirockz) for general help
 
 
 [Jasper Valery](https://www.artstation.com/jasperjvalery) for his Xenia logo.
+
+
