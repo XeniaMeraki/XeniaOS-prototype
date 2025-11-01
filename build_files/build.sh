@@ -32,6 +32,7 @@ org.freedesktop.impl.portal.Secret=gnome-keyring;
 EOF
 dnf -y remove nautilus
 dnf -y remove ghostty
+flatpak uninstall com.valvesoftware.Steam
 
 #Dolphin file associations
 dnf install -y dolphin kf5-kservice keditfiletype
@@ -43,92 +44,6 @@ systemctl mask --global dms.service
 systemctl mask --global cliphist.service
 systemctl unmask --global noctalia.service
 systemctl enable --global noctalia.service
-
-# Install patched fwupd
-# Install Valve's patched Mesa, Pipewire, Bluez
-RUN --mount=type=cache,dst=/var/cache \
-    --mount=type=cache,dst=/var/log \
-    declare -A toswap=( \
-        ["copr:copr.fedorainfracloud.org:bazzite-org:bazzite"]="wireplumber" \
-        ["copr:copr.fedorainfracloud.org:bazzite-org:bazzite-multilib"]="pipewire bluez xorg-x11-server-Xwayland" \
-        ["terra-mesa"]="mesa-filesystem" \
-        ["copr:copr.fedorainfracloud.org:ublue-os:staging"]="fwupd" \
-    ) && \
-    for repo in "${!toswap[@]}"; do \
-        for package in ${toswap[$repo]}; do dnf5 -y swap --repo=$repo $package $package; done; \
-    done && unset -v toswap repo package && \
-    dnf5 versionlock add \
-        pipewire \
-        pipewire-alsa \
-        pipewire-gstreamer \
-        pipewire-jack-audio-connection-kit \
-        pipewire-jack-audio-connection-kit-libs \
-        pipewire-libs \
-        pipewire-plugin-libcamera \
-        pipewire-pulseaudio \
-        pipewire-utils \
-        wireplumber \
-        wireplumber-libs \
-        bluez \
-        bluez-cups \
-        bluez-libs \
-        bluez-obexd \
-        mesa-dri-drivers \
-        mesa-filesystem \
-        mesa-libEGL \
-        mesa-libGL \
-        mesa-libgbm \
-        mesa-va-drivers \
-        mesa-vulkan-drivers \
-        fwupd \
-        fwupd-plugin-flashrom \
-        fwupd-plugin-modem-manager \
-        fwupd-plugin-uefi-capsule-data && \
-    dnf5 -y install \
-        mesa-va-drivers.i686 && \
-    dnf5 -y install --enable-repo="*rpmfusion*" --disable-repo="*fedora-multimedia*" \
-        libaacs \
-        libbdplus \
-        libbluray \
-        libbluray-utils && \
-    /ctx/cleanup
-
-# Install Steam & Lutris, plus supporting packages
-# Downgrade ibus to fix an issue with the Steam keyboard
-RUN --mount=type=cache,dst=/var/cache \
-    --mount=type=cache,dst=/var/log \
-    --mount=type=secret,id=GITHUB_TOKEN \
-    dnf5 versionlock add \
-        ibus && \
-    dnf5 -y install \
-        gamescope.x86_64 \
-        gamescope-libs.x86_64 \
-        gamescope-libs.i686 \
-        gamescope-shaders \
-        jupiter-sd-mounting-btrfs \
-        umu-launcher \
-        dbus-x11 \
-        xdg-user-dirs \
-        gobject-introspection \
-        libFAudio.x86_64 \
-        libFAudio.i686 \
-        vkBasalt.x86_64 \
-        vkBasalt.i686 \
-        mangohud.x86_64 \
-        mangohud.i686 \
-        libobs_vkcapture.x86_64 \
-        libobs_glcapture.x86_64 \
-        libobs_vkcapture.i686 \
-        libobs_glcapture.i686 \
-        VK_hdr_layer && \
-    dnf5 -y --setopt=install_weak_deps=False install \
-        steam \
-        lutris && \
-    dnf5 -y remove \
-        gamemode && \
-    /ctx/ghcurl "https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks" -Lo /usr/bin/winetricks && \
-    chmod +x /usr/bin/winetricks && \
-    /ctx/cleanup
 
 #replace Fedora kernel with CachyOS kernel
 rm -r -f /usr/lib/modules
