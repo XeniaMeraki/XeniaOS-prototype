@@ -19,6 +19,7 @@ dnf -y install ptyxis
 dnf -y install hyfetch
 dnf -y copr enable atim/starship
 dnf -y install starship
+dnf -y install steam
 
 # Nuke Nautilus from orbit and replace with KDE dialogs
 dnf install -y xdg-desktop-portal-kde
@@ -32,7 +33,6 @@ org.freedesktop.impl.portal.Secret=gnome-keyring;
 EOF
 dnf -y remove nautilus
 dnf -y remove ghostty
-flatpak uninstall com.valvesoftware.Steam
 
 #Dolphin file associations
 dnf install -y dolphin kf5-kservice keditfiletype
