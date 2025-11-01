@@ -2,7 +2,7 @@
 <h3 align="center">Fedora Bootc / Niri / Noctalia / Xenia / Gaming On Linux</h3>
 
 <p align="center">
-<img alt="Logo Banner" src="https://github.com/XeniaMeraki/XeniaOS/blob/6d7712a7101cb68545ce21a0f8463842c95516da/system_files/usr/share/XeniaOS/xenia-logo.png?sanitize=true" width="300"/>
+<img alt="Logo Banner" src="https://github.com/XeniaMeraki/XeniaOS/blob/main/system_files/usr/share/XeniaOS/xenia-logo.svg?sanitize=true" width="250"/>
 
 This is an opinionated gaming-oriented bootc image (currently) based off [Zirconium](https://github.com/zirconium-dev/zirconium) adding gaming defaults and packages.
 And of course, featuring [Xenia the fox](https://xenia.efi.pages.gay/) in theming.
