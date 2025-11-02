@@ -1,0 +1,3 @@
+[Flatpak Preinstall com.dec05eba.gpu_screen_recorder]
+Branch=stable
+IsRuntime=false
