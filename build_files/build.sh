@@ -33,11 +33,6 @@ EOF
 dnf -y remove nautilus
 dnf -y remove ghostty
 
-#Dolphin file associations
-dnf install -y dolphin kf5-kservice keditfiletype
-ln -sf ./kf5-applications.menu /etc/xdg/menus/applications.menu
-kbuildsycoca6 --noincremental
-
 #Uses Noctalia by default
 systemctl mask --global dms.service
 systemctl mask --global cliphist.service
