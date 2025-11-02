@@ -1,0 +1,3 @@
+[submodule "system_files/usr/share/XeniaOS/wallpapers"]
+	path = system_files/usr/share/XeniaOS/wallpapers
+	url = https://github.com/xeniameraki/xeniaos-g-euphoria
