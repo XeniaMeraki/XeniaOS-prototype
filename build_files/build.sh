@@ -2,7 +2,6 @@
 
 set -ouex pipefail
 cp -avf "/ctx/system_files"/. /
-cp /usr/share/XeniaOS/xeniawallpaper.png /usr/share/zirconium/noctalia-shell/Assets/Wallpaper/noctalia.png
 rm -rf /usr/share/zirconium/zdots
 git clone https://github.com/XeniaMeraki/XeniaOS-HRT /usr/share/zirconium/zdots
 ### Install packages
