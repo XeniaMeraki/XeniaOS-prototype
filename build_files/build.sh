@@ -40,7 +40,6 @@ systemctl unmask --global noctalia.service
 systemctl enable --global noctalia.service
 
 #replace Fedora kernel with CachyOS kernel
-rm -r -f /usr/lib/modules
 
 for pkg in kernel kernel-core kernel-modules kernel-modules-core; do
   rpm --erase $pkg --nodeps
