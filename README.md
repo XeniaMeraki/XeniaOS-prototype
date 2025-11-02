@@ -2,7 +2,7 @@
 <h3 align="center">Fedora Bootc / Niri / Noctalia / Xenia / Gaming On Linux</h3>
 
 <p align="center">
-<img alt="Logo Banner" src="https://github.com/XeniaMeraki/XeniaOS/blob/main/system_files/usr/share/XeniaOS/xenia-logo.svg?sanitize=true" width="250"/>
+<img alt="Logo Banner" src="https://github.com/XeniaMeraki/XeniaOS-G-Euphoria/blob/main/prototypelogo_delphic_melody.svg?sanitize=true" width="250"/>
 
 This is an opinionated gaming-oriented bootc image (currently) based off [Zirconium](https://github.com/zirconium-dev/zirconium) adding gaming defaults and packages.
 And of course, featuring [Xenia the fox](https://xenia.efi.pages.gay/) in theming.
@@ -37,7 +37,7 @@ It can be used by first installing [Bluefin](https://projectbluefin.io/) (or any
 The project is in its infancy, I would not use this for any serious work/use for right now.
 
 <p align="center">
-<img alt="Screenshot" src="system_files/usr/share/XeniaOS/ExampleScreenshot.png?sanitize=true"/>
+<img alt="Screenshot" src="https://github.com/XeniaMeraki/XeniaOS-G-Euphoria/blob/main/examplescreenshot.png?sanitize=true"/>
 </p>
 
 
