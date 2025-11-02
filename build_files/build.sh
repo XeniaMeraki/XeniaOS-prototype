@@ -39,6 +39,11 @@ systemctl mask --global cliphist.service
 systemctl unmask --global noctalia.service
 systemctl enable --global noctalia.service
 
+add_wants_niri() {
+    sed -i "s/\[Unit\]/\[Unit\]\nWants=$1/" "/usr/lib/systemd/user/niri.service"
+}
+add_wants_niri noctalia.service
+
 #replace Fedora kernel with CachyOS kernel
 
 for pkg in kernel kernel-core kernel-modules kernel-modules-core; do
