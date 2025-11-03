@@ -69,9 +69,6 @@ dnf -y --enablerepo copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-a
   cachyos-ksm-settings \
   scx-manager
 
-# TODO: remove once https://github.com/CachyOS/copr-linux-cachyos/pull/69 is merged
-install -Dpm0644 -t /usr/lib/systemd/system/greetd.service.d /usr/lib/systemd/system/user@.service.d/10-ksm.conf
-
 # Probably then normal kernel initialization idk
 
 KERNEL_VERSION="$(find "/usr/lib/modules" -maxdepth 1 -type d ! -path "/usr/lib/modules" -exec basename '{}' ';' | sort | tail -n 1)"
