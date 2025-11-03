@@ -19,6 +19,7 @@ dnf -y install hyfetch
 dnf -y copr enable atim/starship
 dnf -y install starship
 dnf -y install steam
+dnf -y install https://github.com/Vencord/Vesktop/releases/download/v1.6.1/vesktop-1.6.1.x86_64.rpm
 
 # Nuke Nautilus from orbit and replace with KDE dialogs
 dnf install -y xdg-desktop-portal-kde
@@ -38,11 +39,6 @@ systemctl mask --global dms.service
 systemctl mask --global cliphist.service
 systemctl unmask --global noctalia.service
 systemctl enable --global noctalia.service
-
-add_wants_niri() {
-    sed -i "s/\[Unit\]/\[Unit\]\nWants=$1/" "/usr/lib/systemd/user/niri.service"
-}
-add_wants_niri noctalia.service
 
 #replace Fedora kernel with CachyOS kernel
 
