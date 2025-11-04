@@ -62,7 +62,6 @@ dnf -y copr disable bieszczaders/kernel-cachyos-addons
 dnf -y --enablerepo copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-addons swap zram-generator-defaults cachyos-settings
 dnf -y --enablerepo copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-addons install \
   scx-scheds-git \
-  cachyos-ksm-settings \
   scx-manager
 
 # Probably then normal kernel initialization idk
