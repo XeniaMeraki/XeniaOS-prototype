@@ -46,14 +46,13 @@ The project is in its infancy, I would not use this for any serious work/use for
 
 Developers can currently most easily be reached in the [Zirconium Discord](https://discord.gg/mmgNQpxwhW)
 
+
 XeniaOS headed by [Xenia Meraki](https://xeniameraki.com)
+
 
 Special thank yous to [Tulip](https://github.com/tulilirockz) for general help
 
 
-[Chimmie Firefly](https://github.com/GamePlayer-8/xenia.chimmie.k.vu) for Xenia artwork
-
-
-[Jasper Valery](https://www.artstation.com/jasperjvalery) for his Xenia logo.
+[Chimmie Firefly](https://github.com/GamePlayer-8/xenia.chimmie.k.vu) [Jasper Valery](https://www.artstation.com/jasperjvalery) [Delphic Melody](https://github.com/delphicmelody) for Xenia artwork/logos/assets/concepting.
 
 
